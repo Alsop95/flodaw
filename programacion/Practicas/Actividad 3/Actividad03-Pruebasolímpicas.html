@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Actividad 03 - Pruebas olímpicas</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+
+    var runner1 = prompt("Introduzca nombre del corredor1", "Desconocido");
+    var marca1 = prompt("Introduzca su marca", 0);
+    var runner2 = prompt("Introduzca nombre del corredor2", "Desconocido");
+    var marca2 = prompt("Introduzca su marca", 0);
+    var runner3 = prompt("Introduzca nombre del corredor3", "Desconocido");
+    var marca3 = prompt("Introduzca su marca", 0);
+
+
+  if (marca1<marca2) {
+          if (marca2<marca3) {
+            console.log("Primero:"+runner1+"con"+marca1+"segundos"+"\nSegundo:"+runner2+"con"+marca2+"segundos"+"\nTercero"+runner3+"con"+marca3+"segundos");
+          } else {
+                if (marca1<marca3) {
+                    console.log("Primero:"+runner1+"con"+marca1+"segundos"+"\nSegundo:"+runner3+"con"+marca3+"segundos"+"\nTercero"+runner2+"con"+marca2+"segundos"+);
+                  } else {
+                    console.log("Primero:"+runner3+"con"+marca3+"segundos"+"\nSegundo:"+runner1+"con"+marca1+"segundos"+"\nTercero"+runner2+"con"+marca2+"segundos"+);
+                    }
+
+          }
+  } else {
+    if (marca1<marca3) {
+      console.log("Primero:"+runner2+"con"+marca2+"segundos"+"\nSegundo:"+runner1+"con"+marca1+"segundos"+"\nTercero"+runner3+"con"+marca3+"segundos"+);
+    } else {
+                if (marca2<marca3) {
+                  console.log("Primero:"+runner2+"con"+marca2+"segundos"+"\nSegundo:"+runner3+"con"+marca3+"segundos"+"\nTercero"+runner1+"con"+marca1+"segundos"+);
+                } else {
+                  console.log("Primero:"+runner3+"con"+marca3+"segundos"+"\nSegundo:"+runner2+"con"+marca2+"segundos"+"\nTercero"+runner1+"con"+marca1+"segundos"+);
+                }
+
+    }
+  }
+
+
+
+
+    </script>
+  </body>
+</html>

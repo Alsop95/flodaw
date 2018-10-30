@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+
+  var numero = prompt("introduce el numero cuya tabla deseas conocer","error")
+  var tabla = 1
+  var res=0
+
+if (0<numero) {
+  if (numero<101) {
+
+    for (var tabla = 1; tabla < 11; tabla++) {
+      res=numero*tabla
+       console.log(numero+"X"+tabla+"="+res);
+    }
+
+  } else {
+    console.log("el numero no esta comprendido entre 1 y 100, o la variable introducida no es numerica");
+  }
+} else {
+  console.log("el numero no esta comprendido entre 1 y 100, o la variable introducida no es numerica");
+}
+
+    </script>
+
+  </body>
+</html>

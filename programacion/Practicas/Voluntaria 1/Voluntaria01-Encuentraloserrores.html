@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h3>Programa que calcula la media ponderada de 4 notas de un alumno</h3>
+    <script type="text/javascript">
+      var total=0;
+      var notaPrimera=Number(prompt("Introduce la primera nota"));
+      total=total+notaPrimera;
+      var notaSegunda=Number(prompt("Introduce la segunda nota"));
+      total=total+notaSegunda;//El segundo fallo estaba aqui, ponia notaprimera de nuevo, en lugar de notaSegunda
+      var notaTercera=Number(prompt("Introduce la tercera nota"));
+      total=total+notaTercera; //El primer error se encontraba aqui, en total=totalnotaTercera; faltaba un mas
+      var notaCuarta=Number(prompt("Introduce la cuarta nota")); // el tercer fallo estaba aqui, este prompt no declaraba la variable como numerica
+      total=total+notaCuarta;
+              total=total/4 //nota sin esta linea en lugar de sacar la media saca al suma total con el console.log
+      console.log("La media final es: "+ total);
+    </script>
+  </body>
+</html>

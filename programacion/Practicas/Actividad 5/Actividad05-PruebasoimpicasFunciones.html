@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+
+    var corredores= ["","",""]
+    var marcas = [100,100,100]
+  for (var i = 0; i < marcas.length; i--) {
+   var nuevocorredor=prompt("Nombre");
+  var nuevamarca=prompt("marca",100);
+  if (nuevocorredor=="salir") {
+         break;
+    }else if (nuevamarca<marcas[0]) {
+     corredores.splice(2,1,corredores[1]);
+    marcas.splice(2,1,marcas[1]);
+     corredores.splice(1,1,corredores[0]);
+    marcas.splice(1,1,marcas[0]);
+     corredores.splice(0,1,nuevocorredor);
+    marcas.splice(0,1,nuevamarca);
+    console.log(marcas);
+    }else if (nuevamarca<marcas[1]) {
+     corredores.splice(2,1,corredores[1]);
+    marcas.splice(2,1,marcas[1]);
+     corredores.splice(1,1,nuevocorredor);
+    marcas.splice(1,1,nuevamarca);
+    console.log(marcas);
+    }else if (nuevamarca<marcas[2]) {
+    corredores.splice(2,1,nuevocorredor);
+    marcas.splice(2,1,nuevamarca);
+    console.log(marcas);
+    }else {
+    console.log(marcas);
+    }
+  }
+ console.log("El primer clasificado es "+corredores[0]+" Con una marca de "+marcas[0]);
+ console.log("El segundo clasificado es "+corredores[1]+" Con una marca de "+marcas[1]);
+ console.log("El tercero clasificado es "+corredores[2]+" Con una marca de "+marcas[2]);
+    </script>
+  </body>
+</html>
