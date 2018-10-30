@@ -8,36 +8,35 @@
     <script type="text/javascript">
 
     var runner1 = prompt("Introduzca nombre del corredor1", "Desconocido");
-    var marca1 = prompt("Introduzca su marca", 0);
+    var marca1 = Number (prompt("Introduzca su marca", 0));
     var runner2 = prompt("Introduzca nombre del corredor2", "Desconocido");
-    var marca2 = prompt("Introduzca su marca", 0);
+    var marca2 = Number(prompt("Introduzca su marca", 0));
     var runner3 = prompt("Introduzca nombre del corredor3", "Desconocido");
-    var marca3 = prompt("Introduzca su marca", 0);
+    var marca3 = Number(prompt("Introduzca su marca", 0));
 
+if (marca1<marca2) {
+  if (marca2<marca3) {
+    console.log(" Primero: "+runner1+" con "+marca1+" segundos "+"\n Segundo: "+runner2+" con "+marca2+" segundos "+"\n Tercero: "+runner3+" con "+marca3+" segundos ");
+        } else {
+    console.log (" Primero: "+runner1+" con "+marca1+" segundos "+" \n Segundo: "+runner3+" con "+marca3+" segundos "+"\n Tercero: "+runner2+" con "+marca2+" segundos ");
+              }
+        } else {
+  if (marca1<marca3) {
+    console.log(" Primero: "+runner2+" con "+marca2+" segundos "+"\n Segundo: "+runner1+" con "+marca1+" segundos "+"\n Tercero: "+runner3+" con "+marca3+" segundos ");
 
-  if (marca1<marca2) {
-          if (marca2<marca3) {
-            console.log("Primero:"+runner1+"con"+marca1+"segundos"+"\nSegundo:"+runner2+"con"+marca2+"segundos"+"\nTercero"+runner3+"con"+marca3+"segundos");
+        } else {
+  if (marca2<marca3) {
+    console.log(" Primero: "+runner2+" con "+marca2+" segundos "+"\n Segundo: "+runner3+" con "+marca3+" segundos "+"\n Tercero: "+runner1+" con "+marca1+" segundos ")
+        } else {
+
+  if (marca2<marca1) {
+    console.log(" Primero: "+runner3+" con "+marca3+" segundos "+"\n Segundo: "+runner2+" con "+marca2+" segundos "+"\n Tercero: "+runner1+" con "+marca1+" segundos ");
           } else {
-                if (marca1<marca3) {
-                    console.log("Primero:"+runner1+"con"+marca1+"segundos"+"\nSegundo:"+runner3+"con"+marca3+"segundos"+"\nTercero"+runner2+"con"+marca2+"segundos"+);
-                  } else {
-                    console.log("Primero:"+runner3+"con"+marca3+"segundos"+"\nSegundo:"+runner1+"con"+marca1+"segundos"+"\nTercero"+runner2+"con"+marca2+"segundos"+);
-                    }
-
+    console.log(" Primero: "+runner3+" con "+marca3+" segundos "+"\n Segundo: "+runner1+" con "+marca1+" segundos "+"\n Tercero: "+runner2+" con "+marca2+" segundos ");
           }
-  } else {
-    if (marca1<marca3) {
-      console.log("Primero:"+runner2+"con"+marca2+"segundos"+"\nSegundo:"+runner1+"con"+marca1+"segundos"+"\nTercero"+runner3+"con"+marca3+"segundos"+);
-    } else {
-                if (marca2<marca3) {
-                  console.log("Primero:"+runner2+"con"+marca2+"segundos"+"\nSegundo:"+runner3+"con"+marca3+"segundos"+"\nTercero"+runner1+"con"+marca1+"segundos"+);
-                } else {
-                  console.log("Primero:"+runner3+"con"+marca3+"segundos"+"\nSegundo:"+runner2+"con"+marca2+"segundos"+"\nTercero"+runner1+"con"+marca1+"segundos"+);
-                }
-
+      }
     }
-  }
+}
 
 
 
@@ -45,3 +44,27 @@
     </script>
   </body>
 </html>
+
+if (marca1<marca2) {
+        if (marca2<marca3) {
+          console.log("Primero:"+runner1+"con"+marca1+"segundos"+"\nSegundo:"+runner2+"con"+marca2+"segundos"+"\nTercero"+runner3+"con"+marca3+"segundos");
+        } else {
+              if (marca1<marca3) {
+                  console.log("Primero:"+runner1+"con"+marca1+"segundos"+"\nSegundo:"+runner3+"con"+marca3+"segundos"+"\nTercero"+runner2+"con"+marca2+"segundos"+);
+                } else {
+                  console.log("Primero:"+runner3+"con"+marca3+"segundos"+"\nSegundo:"+runner1+"con"+marca1+"segundos"+"\nTercero"+runner2+"con"+marca2+"segundos"+);
+                  }
+
+        }
+} else {
+  if (marca1<marca3) {
+    console.log("Primero:"+runner2+"con"+marca2+"segundos"+"\nSegundo:"+runner1+"con"+marca1+"segundos"+"\nTercero"+runner3+"con"+marca3+"segundos"+);
+  } else {
+              if (marca2<marca3) {
+                console.log("Primero:"+runner2+"con"+marca2+"segundos"+"\nSegundo:"+runner3+"con"+marca3+"segundos"+"\nTercero"+runner1+"con"+marca1+"segundos"+);
+              } else {
+                console.log("Primero:"+runner3+"con"+marca3+"segundos"+"\nSegundo:"+runner2+"con"+marca2+"segundos"+"\nTercero"+runner1+"con"+marca1+"segundos"+);
+              }
+
+  }
+}
